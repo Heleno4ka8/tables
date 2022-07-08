@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+a {
+    display: block;
+}
+h1, h2 {
+    letter-spacing: 1px;
+    color: #bfbfbf;
+    font-weight: bold;
+    font-size: 24px;
+}
+table {
+    border-radius: 3px;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr:not(.cap):hover {
+    background: #c0c1c2;
+}
+th {
+    color: #fff;
+    padding-left: 25px;
+    font-size: 16px;
+}
+th:not(:last-child) {
+    border-right: 1px solid #3f4852;
+}
+tr:first-child th:nth-child(2) {
+    text-align: left;
+}
+th, 
+td {
+    border-top: 1px solid #3f4852;
+    padding: 15px 22px;
+}
+td:first-child {
+    text-align: center;
+}
+td:nth-child(2) {
+    width: 53%;
+}
+tbody tr:nth-child(2n) {
+    background-color:#e8e8e8;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+td:nth-child(n+3) {
+    text-align: right;
+}
+td {
+    border-top: 1px solid #c0c1c2;
+    font-size: 16px;
+    color: #2a3644;
+} 
+td+td {
+    border-left: 1px solid #c0c1c2;
+}
+nav {
+    margin:  40px 0;
+    background-color: #2a3644;
+    border-radius: 3px; 
+}
+ul {
+    justify-content: space-between;
+}
+.wrapper {
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 73px 0 97px;
+}
+.topik {
+    padding-left: 10px 0;
+}
+.topik ul {
+    margin: 0;
+    list-style: none;
+}
+.topik a {
+    text-decoration: none;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+.top>li:not( :last-child){
+    border-right: 1px solid #3f4852;
+}
+.top>li:not( :first-child){
+    border-left: 1px solid #3f4852;
+}
+.menu {
+    padding-left: 0;
+}
+.menu li {
+    position: relative;
+}
+.menu>li {
+    text-align: center;
+    font-weight: bold;
+}
+.menu li:hover>a {
+    background-color: #3f4852;
+    color:#ff8505; 
+}
+.menu a {
+    display: block;
+    color: white;
+    padding: 15px 30px ;
+}
+.menu>li:first-child:hover>a {
+    border-radius: 3px 0 0 3px;
+}
+.menu>li:last-child:hover>a {
+    border-radius: 0 3px 3px 0;
+}
+.menu li:hover>.out {
+    visibility: visible;
+}
+.menu>li:last-child .out{
+    right: 0;
+}
+.menu>li+li {
+    border-left: 1px solid #3f4852;
+}
+.out {
+    font-size: 15px;
+    text-align: left;
+    color: #2a3644;
+    font-family: "Arial";
+    position: absolute;
+    z-index: 999;
+    width: 211px;
+    visibility: hidden;
+    border-top: 5px solid transparent;
+}
+.out ul {
+    background-color: #d2d3d5;
+    border-radius: 3px;
+    padding-left: 0;
+}
+.out li+li {
+    border-top: 1px solid #b9bdc1;
+}
+.out li:hover>a  {
+    color:#ff8505; 
+    background-color: #2a3644;
+}
+.out a {
+    color:#2a3644;
+    padding: 11px 20px;
+}
+.out li:first-child:hover>a {
+    border-radius: 3px  3px 0 0;
+}
+.out li:last-child:hover>a {
+    border-radius: 0 0 3px 3px;
+}
+.more1 {
+    left: 100%;
+    top: 0;
+    border-top: none;
+    border-left: 5px solid transparent;
+}
+.more2 {
+    right: 100%;
+    top: 0;
+    border-top: none;
+    border-right: 5px solid transparent;
+}
+.act {
+    width: 420px;
+}
+.act ul{
+    max-height: 163px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+a.home {
+    padding-left: 60px;
+    position: relative;
+}
+.home:before {
+    content: "";
+    background-image: url(../img/home.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    left: 30px;
+}
+.things {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.things>ul {
+    display: flex;
+}
+.things>ul>li {
+    color: #fff;
+}
+.cell {
+    display: table;
+    width: 100%;
+}
+.cell>ul {
+    display: table-row;
+}
+.cell>ul>li {
+    display: table-cell;
+}
+.social {
+    padding-right: 17px;
+}
+.social li {
+    color: #fff;
+    margin: 0 13px;
+}
+.social a {
+    background: url(../img/sprite.png);
+    display: block;
+}
+a.fb {
+    background-position: 0 0;
+    width: 10px;
+    height: 19px;
+}
+a.tw {
+    background-position: -12px 0;
+    width: 18px;
+    height: 16px;
+}
+a.in {
+    background-position: -31px 0;
+    width: 20px;
+    height: 20px;
+}
+a.fb:hover {
+    background-position: 0 -22px;
+}
+a.tw:hover {
+    background-position: -12px -22px;
+}
+a.in:hover {
+    background-position: -31px -22px;
+}
+.cap {
+    background-color: #2a3644;
+}
